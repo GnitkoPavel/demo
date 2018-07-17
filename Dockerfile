@@ -34,6 +34,6 @@ RUN set -x \
 		openjdk8="$JAVA_ALPINE_VERSION" \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
-COPY JAR/target/demo-0.0.1-SNAPSHOT.jar /opt
+COPY target/demo-0.0.1-SNAPSHOT.jar /opt
 RUN java -jar /opt/demo-0.0.1-SNAPSHOT.jar
 EXPOSE 80
