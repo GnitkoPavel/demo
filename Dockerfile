@@ -35,5 +35,5 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
 COPY target/demo-0.0.1-SNAPSHOT.jar /opt
-EXPOSE 80
+EXPOSE 8080
 CMD java -jar /opt/demo-0.0.1-SNAPSHOT.jar
