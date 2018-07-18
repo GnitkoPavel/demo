@@ -36,4 +36,4 @@ RUN set -x \
 
 COPY target/demo-0.0.1-SNAPSHOT.jar /opt
 EXPOSE 8080
-CMD java -jar /opt/demo-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","/opt/demo-0.0.1-SNAPSHOT.jar"]
