@@ -42,7 +42,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION 20170531+nmu1
 
 RUN set -ex; \
 	\
-# deal with slim variants not having man page directories (which causes "update-alternatives" to fail)
+# deal with slim variants not having man page directories (which causes "update-alternatives" to fail)фыв
 	if [ ! -d /usr/share/man/man1 ]; then \
 		mkdir -p /usr/share/man/man1; \
 	fi; \
